@@ -1,23 +1,38 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
-import Rank from 'components/rank/rank'
-import NewMusic from 'components/newMusic/newMusic'
+import Finding from 'components/finding/finding'
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/rank'
+      redirect: '/finding'
     },
     {
-      path: '/rank',
-      component: Rank
+      path: '/finding',
+      component: Finding
     },
     {
-      path: '/newMusic',
-      component: NewMusic
+      path: '/radio',
+      name: 'radio',
+      component: () => import('components/radio/radio')
+    },
+    {
+      path: '/mine',
+      name: 'mine',
+      component: () => import('components/mine/mine')
+    },
+    {
+      path: '/cloud',
+      name: 'cloud',
+      component: () => import('components/cloud/cloud')
+    },
+    {
+      path: '/account',
+      name: 'account',
+      component: () => import('components/account/account')
     }
   ]
 })

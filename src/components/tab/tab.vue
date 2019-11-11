@@ -15,11 +15,11 @@ export default {
   data () {
     return {
       tabButtons: [
-        {icon: require('common/images/icons/netMusic.png'), name: '发现', to: '/rank'},
-        {icon: require('common/images/icons/netMusic.png'), name: '视频', to: '/newMusic'},
-        {icon: require('common/images/icons/netMusic.png'), name: '我的', to: '/rank'},
-        {icon: require('common/images/icons/netMusic.png'), name: '云村', to: '/newMusic'},
-        {icon: require('common/images/icons/netMusic.png'), name: '账号', to: '/rank'}
+        {icon: require('common/images/icons/netMusic.png'), name: '发现', to: '/finding'},
+        {icon: require('common/images/icons/netMusic.png'), name: '视频', to: '/radio'},
+        {icon: require('common/images/icons/netMusic.png'), name: '我的', to: '/mine'},
+        {icon: require('common/images/icons/netMusic.png'), name: '云村', to: '/cloud'},
+        {icon: require('common/images/icons/netMusic.png'), name: '账号', to: '/account'}
       ]
     }
   },
