@@ -47,8 +47,14 @@ export default {
     justify-content space-around
     .tab-item
       text-align center
-      margin 2px 0
+      margin 4px 0
       .tab-span
         display block
         font-size 12px
+        margin-top 3px
+  .router-link-active
+    color red
+    img
+      background-color red
+      border-radius 50%
 </style>

@@ -5,18 +5,20 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 export default {
   name: 'radio',
   data () {
     return {
+      allData: []
     }
   },
   methods: {
     getMyInfor () {
-      axios.get('http://localhost:3000/user/detail?uid=1786358465').then(res => {
-        console.log(res.data)
-      })
+      // axios.get('http://localhost:3000/user/playlist?uid=1786358465').then(res => {
+      //   console.log(res.data.playlist)
+      //   this.allData = res.data.playlist
+      // })
     }
   },
   created () {

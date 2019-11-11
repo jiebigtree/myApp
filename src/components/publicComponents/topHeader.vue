@@ -1,26 +1,23 @@
 <template>
-  <div class="rank">
-    发现
+  <div class="top-header">
+    <slot name="left">左</slot>
+    <slot name="search">
+      <input type="text" placeholder="search">
+    </slot>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 export default {
-  name: 'rank',
+  name: 'top-header',
   data () {
     return {
     }
   },
   methods: {
-    getBannerPic () {
-      axios.get('http://localhost:3000/banner?type=2').then(res => {
-        console.log(res.data.banners)
-      })
-    }
   },
   created () {
-    this.getBannerPic()
   }
 }
 </script>
